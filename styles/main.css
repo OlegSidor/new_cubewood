@@ -1,0 +1,291 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  position: relative;
+}
+/* HEAD */
+header{
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+  clear: both;
+}
+header a{
+  outline: none;
+  text-decoration: none;
+}
+@font-face{
+  font-family:'roboto_thin';
+  src: url('/fonts/roboto thin.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family:'roboto_light';
+  src: url('/fonts/roboto light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.logo{
+  position: relative;
+  float: left;
+  width: 450px;
+}
+.logo span{
+  margin-left: 50px;
+  position: absolute;
+  color: #b3d560;
+  font-size: 25px;
+  font-family: roboto_thin;
+}
+nav{
+float: right;
+}
+nav a{
+  text-decoration: none;
+}
+nav .mine-nav li{
+  list-style-type: none;
+  display: inline;
+  font-family: roboto_light;
+}
+nav .nav{
+  color: #b15f32;
+  margin-left: 40px;
+}
+nav .language{
+  color: #b6b1af;
+}
+nav .lsel{
+  margin-left: 20px;
+  display: inline;
+}
+nav .sel{
+  color: #b15f32;
+  font-weight: bold;
+}
+nav .nav:hover{
+  text-decoration: underline;
+}
+nav .cart{
+margin-left: 10px;
+color: #b15f32;
+}
+nav .cart img{
+  margin-bottom: -6px;
+}
+nav #count{
+  color: #b6b1af;
+}
+nav .social{
+margin-top: 50px;
+float: right;
+}
+nav .social li{
+  list-style: none;
+  display: inline;
+}
+.item{
+  display: block;
+  position: relative;
+}
+body .category{
+  clear: both;
+  display: grid;
+  width: 120px;
+  position: absolute;
+  top: 150px;
+}
+body .category a{
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: roboto_light;
+  color: #b15f32;
+  padding: 5px;
+  width: 95px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  margin-bottom: 2px;
+  border: solid 0.5px #d0b497;
+}
+body .category a:hover{
+  transition-duration: 0.2s;
+  background: #d0b497;
+}
+.main{
+  clear: both;
+  float: right;
+  width: 70%;
+  position: relative;
+}
+.bcataloge{
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  font-family: roboto_light;
+  text-align: center;
+  display: block;
+  width: 500px;
+  color: #b6b1af;
+}
+.bcataloge span:not(.titl){
+color: #b15f32;
+padding: 10px;
+padding-left: 25px;
+padding-right: 25px;
+border: solid 1px #b15f32;
+font-size: 25px;
+}
+.titl{
+  color: #b15f32;
+  font-size: 40px;
+}
+/* MAIN */
+body main{
+  clear: both;
+  width: 1100px;
+  margin: 0 auto;
+  font-family: roboto_light;
+}
+body main .title{
+color: #b15f32;
+margin: 0 auto;
+text-align: center;
+padding-top: 10px;
+}
+body main .title span{
+  font-size: 20px;
+}
+body main .catalogue {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+body main .catalogue > *{
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  text-align: center;
+}
+.name{
+  position: absolute;
+  width: 100%;
+  background: rgba(255,255,255,0.5);
+  text-align: center;
+  color: #b15f32;
+  height: 60px;
+}
+/* CATALOGUE */
+#handing_{
+  top: 50px;
+}
+#handing_ figcaption{
+  margin-top: 10px;
+    width: 100px;
+    margin-left: 120px;
+}
+#desktop_{
+  top: 170px;
+}
+#desktop_ figcaption{
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 65px;
+}
+#sconce_{
+  top: 100px;
+}
+#sconce_ figcaption{
+  margin-top: 20px;
+  margin-left: 150px;
+  font-size: 20px;
+}
+#floor_{
+  top: 170px;
+}
+#floor_ figcaption{
+  margin-top: 20px;
+  margin-right: 120px;
+  font-size: 20px;
+}
+main .catalogue a{
+  text-decoration: none;
+}
+/* FOOTER */
+footer{
+  font-family: roboto_light;
+  clear: both;
+  background: #c39269;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+}
+.footer_content{
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  right: 0;
+}
+footer main{
+  margin-left: 300px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 650px;
+  position: relative;
+}
+.fleft{
+  float: left;
+}
+.сopyright{
+  margin-bottom: 20px;
+}
+.categoryf{
+  display: grid;
+  width: 120px;
+  top: 150px;
+}
+.categoryf a{
+  margin-left: 50px;
+  text-decoration: none;
+  font-family: roboto_light;
+  color: #b15f32;
+  padding: 5px;
+  width: 95px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  margin-bottom: 2px;
+  border: solid 0.5px #d0b497;
+  background: white;
+}
+.fright{
+position: absolute;
+right: 150px;
+top: 45px;
+}
+.foot-nav{
+  width: 100px;
+}
+.foot-nav a{
+  text-decoration: none;
+  color: white;
+}
+.foot-nav a:hover{
+  text-decoration: underline;
+}
+.fright ul li{
+  list-style: none;
+}
+.footer_content .social{
+  position: absolute;
+  top: 70px;
+  right: 0;
+  list-style: none;
+}
+.footer_content .social li{
+  display: inline-block;
+}
