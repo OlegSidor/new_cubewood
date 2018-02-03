@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>CubeWood</title>
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   </head>
   <body>
     <header>
@@ -57,12 +59,12 @@
       <div class="catalogue">
         <div class="handing">
           <a href="#">
-            <img src="/imgs/catalogue/handing.png" alt="">
+            <img src="/imgs/catalogue/handing.png" alt="" onload="size()">
             <div class="name" id="handing_"><figcaption>ПІДВІСНІ
                                                 світильники</figcaption></div>
           </a>
         </div>
-        <div class="desktop">
+         <div class="desktop">
           <a href="#"><img src="/imgs/catalogue/desktop.png" alt="">
             <div class="name" id="desktop_"><figcaption>НАСТІЛЬНІ
                                                 світильники</figcaption></div>
@@ -79,7 +81,32 @@
           </a>
         </div>
       </div>
+      <div class="title">
+        <span>РЕКОМЕНДАЦІЇ</span>
+      </div>
+      <div class="recomendations">
+        <?php
+        $mysqli = new mysqli("localhost","root","","test");
+        $mysqli->query("SET NAME 'utf8'");
+        $items = $mysqli->query("SELECT * FROM `goods` ORDER BY `rating` DESC");
+        for ($i=0; $i < 4; $i++) {
+          if(($item = $items -> fetch_assoc()) != false){
+            echo "<div class='item'>
+                      <a href='$item[url]'>
+                        <img src='$item[src]' alt='WOODbrik'>
+                        <figcaption>$item[name]<span>$item[cost_uah] грн.</span></figcaption>
+                      </a>
+                    </div>";
+          }
+        }
+        ?>
+      </div>
     </main>
+    <div class="slider">
+      <img src="/1.jpg" alt="">
+      <img src="/3.jpg" alt="">
+      <img src="/3.jpg" alt="">
+    </div>
     <footer>
       <div class="footer_content">
         <main>
@@ -116,5 +143,11 @@
     </main>
     </div>
     </footer>
+      <!-- SCRIPTS -->
+
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="/js/main.js"></script>
+      <script type="text/javascript" src="/slick/slick.min.js"></script>
   </body>
 </html>
