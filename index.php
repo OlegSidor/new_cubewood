@@ -35,9 +35,9 @@
       </ul>
     </nav>
     <div class="category">
-      <a href="#">ЛАМПИ</a>
-      <a href="#">ДЕКОР</a>
-      <a href="#">АКЦІЇ</a>
+      <div><a href="#">ЛАМПИ</a></div>
+      <div><a href="#">ДЕКОР</a></div>
+      <div><a href="#">АКЦІЇ</a></div>
     </div>
     <div class="main">
       <img src="/imgs/headlamp.png">
@@ -53,13 +53,14 @@
     </div>
     </header>
     <main>
+      <div class="gr-bg">
       <div class="title">
         <span>КАТАЛОГ</span>
       </div>
       <div class="catalogue">
         <div class="handing">
           <a href="#">
-            <img src="/imgs/catalogue/handing.png" alt="" onload="size()">
+            <img src="/imgs/catalogue/handing.png" alt="">
             <div class="name" id="handing_"><figcaption>ПІДВІСНІ
                                                 світильники</figcaption></div>
           </a>
@@ -81,6 +82,7 @@
           </a>
         </div>
       </div>
+    </div>
       <div class="title">
         <span>РЕКОМЕНДАЦІЇ</span>
       </div>
@@ -97,16 +99,75 @@
                         <figcaption>$item[name]<span>$item[cost_uah] грн.</span></figcaption>
                       </a>
                     </div>";
+          } else {
+            break;
           }
         }
         ?>
       </div>
     </main>
+    <div class="gr-bg slid">
     <div class="slider">
       <img src="/1.jpg" alt="">
       <img src="/3.jpg" alt="">
       <img src="/3.jpg" alt="">
     </div>
+  </div>
+  <main>
+  <div class="title">
+    <span>ВІДГУКИ НАШИХ КЛІЄНТІВ</span>
+  </div>
+  <div class="response">
+    <?php
+
+    $mysqli = new mysqli("localhost","root","","test");
+    $mysqli->query("SET NAME 'utf8'");
+    $items = $mysqli->query("SELECT * FROM `responce`");
+    for ($i=0; $i < 2; $i++) {
+      if(($item = $items -> fetch_assoc()) != false){
+        echo "<div class='item'>
+          <a href='$item[url]'>
+          <img src='$item[src]' alt=''>
+          </a>
+          <div class='text'>
+          <span>
+            <strong>“</strong>$item[text]<strong>„</strong>
+          </span>
+                </div>
+        </div>";
+      } else {
+        break;
+      }
+    }
+
+    ?>
+    <!-- <div class="item">
+      <a href="#">
+      <img src="/imgs/goods/cube15.jpeg" alt="">
+      </a>
+      <div class="text">
+      <span>
+        <strong>“</strong>Супер! Виконали лампи на замовлення, повністю відповідають моєму задуму. Дуже якісно. Приємно співпрацювати - все чітко, індивідуальний підхід. Із задоволенням буду рекомендувати.<strong>„</strong>
+      </span>
+            </div>
+    </div>
+    <div class="item">
+      <a href="#">
+      <img src="/imgs/goods/dontknowname.jpeg" alt="">
+      </a>
+      <div class="text">
+      <span>
+        <strong>“</strong>Супер! Виконали лампи на замовлення, повністю відповідають моєму задуму. Дуже якісно. Приємно співпрацювати - все чітко, індивідуальний підхід. Із задоволенням буду рекомендувати.<strong>„</strong>
+      </span>
+        </div>
+    </div> -->
+  </div>
+  <div class="mailing">
+    <span>РОЗСИЛКА<span>
+    <input type="text" name="email" value="" placeholder="Ваш email">
+    <button type="button" name="button">OK</button>
+  </div>
+</main>
     <footer>
       <div class="footer_content">
         <main>
@@ -121,9 +182,9 @@
         </div>
         <div class="fcenter">
     <div class="categoryf">
-      <a href="#">ЛАМПИ</a>
-      <a href="#">ДЕКОР</a>
-      <a href="#">АКЦІЇ</a>
+      <div><a href="#">ЛАМПИ</a></div>
+      <div><a href="#">ДЕКОР</a></div>
+      <div><a href="#">АКЦІЇ</a></div>
     </div>
   </div>
     <div class="fright">

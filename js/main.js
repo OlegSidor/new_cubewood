@@ -1,4 +1,4 @@
-$(document).ready(function() {
+window.onload = function(){
   $('.slider').slick({
     centerMode: true,
     centerPadding: '25%',
@@ -9,8 +9,6 @@ $(document).ready(function() {
     prevArrow: "<a id='back'><img src='/imgs/prev.png' alt=''></a>",
     nextArrow: "<a id='next'><img src='/imgs/next.png' alt=''></a>",
   });
-});
-function size(){
   $(".catalogue img").height($(".catalogue img:eq(0)").height())
   $(window).resize(function() {
     $(".catalogue img").removeAttr("style")
