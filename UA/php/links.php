@@ -11,6 +11,7 @@ $promotions = "#";
 $facebook = "https://www.facebook.com/cubwood/";
 $twitter = "#";
 $instagram = "https://www.instagram.com/cube_wood/";
+$email = "#";
 //catalogue
 $handing = "#";
 $desctop = "#";

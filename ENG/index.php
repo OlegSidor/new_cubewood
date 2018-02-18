@@ -7,8 +7,8 @@ require("php/links.php")
     <meta charset="utf-8">
     <title>CubeWood</title>
     <link rel="icon" href="/imgs/ico.png" type="/images/png">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/ENG/styles/eng.css">
+    <link rel="stylesheet" href="/styles/main.css?<?=time()?>">
+    <link rel="stylesheet" href="/ENG/styles/eng.css?<?=time()?>">
     <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
   </head>
@@ -153,9 +153,10 @@ require("php/links.php")
     ?>
   </div>
   <div class="mailing">
-    <span>MAILING<span>
+    <span>MAILING</span>
     <input type="text" name="email" value="" placeholder="Your email">
     <button type="button" name="button">OK</button>
+    <img src="/imgs/load.gif" alt="">
   </div>
 </main>
     <footer>
@@ -200,7 +201,7 @@ require("php/links.php")
       </script>
       <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
       <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-      <script type="text/javascript" src="/js/main.js"></script>
+      <script type="text/javascript" src="/js/main.js?<?=time()?>"></script>
       <script type="text/javascript" src="/slick/slick.min.js"></script>
   </body>
 </html>

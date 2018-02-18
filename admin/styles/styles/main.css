@@ -8,68 +8,11 @@
   margin: 0;
   padding: 0;
 }
-.rside-menu{
-  position: fixed;
-  top: 100px;
-  right: -110px;
-  text-align: right;
-  transition-duration: .5s;
-}
-.open_rside{
-    position: fixed;
-    right: 0;
-    top: 150px;
-  	border: 20px solid transparent;
-    border-right: 15px solid #b15f32;
-}
-.open_rside:hover + .rside-menu{
-  right: 0px;
-}
-.rside-menu:hover{
-  right: 0px;
-}
-.rside-menu ul li a {
-  text-decoration: none;
-  color: white;
-}
-.rside-menu ul li{
-  list-style: none;
-  text-align: center;
-  padding: 10px;
-  background: #b15f32;
-  color: white;
-  border-bottom: 1px #964c24 solid;
-  transition-duration: .5s;
-  position: relative;
-}
-.rside-menu ul li:hover{
-  background-color: #ce7f54
-}
-.rside-menu ul li > ul{
-  position: absolute;
-  right: 100%;
-  top: -9999px;
-  width: 150px;
-  border-right: 1px solid #964c24;
-  opacity: 0;
-  transition: .5s opacity;
-}
-.rside-menu ul li:hover > ul{
-  top: 0;
-  opacity: 1;
-}
-.rside-menu ul li:first-child{
-  border-top-left-radius: 5px;
-}
-.rside-menu ul li:last-child{
-  border-bottom-left-radius: 5px;
-  border: none;
-}
 main{
-  width: 65%;
-  min-width: 900px;
+  width: 800px;
   margin: 0 auto;
   font-family: roboto_light;
+  margin-left: -15px; 
 }
 .buttons{
   margin-top: 20px;

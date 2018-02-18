@@ -2,13 +2,14 @@
 require("php/links.php")
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="uk-UA">
   <head>
     <meta charset="utf-8">
+    <meta content="width=1180" name="viewport" id="viewport">
     <title>CubeWood</title>
     <link rel="icon" href="/imgs/ico.png" type="/images/png">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/UA/styles/ua.css">
+    <link rel="stylesheet" href="/styles/main.css?<?=time()?>">
+    <link rel="stylesheet" href="/UA/styles/ua.css?<?=time()?>">
     <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
   </head>
@@ -152,9 +153,10 @@ require("php/links.php")
     ?>
   </div>
   <div class="mailing">
-    <span>РОЗСИЛКА<span>
-    <input type="text" name="email" value="" placeholder="Ваш email">
+    <span>РОЗСИЛКА</span>
+    <input type="email" name="email" value="" placeholder="Ваш email">
     <button type="button" name="button">OK</button>
+    <img src="/imgs/load.gif" alt="">
   </div>
 </main>
     <footer>
@@ -185,10 +187,10 @@ require("php/links.php")
       </ul>
     </div>
     <ul class="social">
-      <li><a href="#"><img src="/imgs/social/facebook.png" alt="facebook"></a></li>
-      <li><a href="#"><img src="/imgs/social/twitter.png" alt="twitter"></a></li>
-      <li><a href="#"><img src="/imgs/social/inst.png" alt="instagram"></a></li>
-      <li><a href="#"><img src="/imgs/social/mail.png" alt="mail"></a></li>
+      <li><a href="<?=$facebook?>"><img src="/imgs/social/facebook.png" alt="facebook"></a></li>
+      <li><a href="<?=$twitter?>"><img src="/imgs/social/twitter.png" alt="twitter"></a></li>
+      <li><a href="<?=$instagram?>"><img src="/imgs/social/inst.png" alt="instagram"></a></li>
+      <li><a href="<?=$email?>"><img src="/imgs/social/mail.png" alt="mail"></a></li>
     </ul>
     </main>
     </div>
@@ -199,7 +201,7 @@ require("php/links.php")
       </script>
       <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
       <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-      <script type="text/javascript" src="/js/main.js"></script>
+      <script type="text/javascript" src="/js/main.js?<?=time()?>"></script>
       <script type="text/javascript" src="/slick/slick.min.js"></script>
   </body>
 </html>

@@ -22,29 +22,13 @@ if(isset($_POST)){
   <head>
     <meta charset="utf-8">
     <title>Адмін панель</title>
-    <link rel="stylesheet" href="/admin/styles/main.css?<?=time()?>">
+    <link rel="stylesheet" href="/admin/styles/main.css">
     <link rel="icon" href="/imgs/ico.png" type="/images/png">
   </head>
   <body>
-    <div class="open_rside"></div>
-    <div class="rside-menu">
-      <ul>
-        <li><a href="/">На головну</a></li>
-        <li>
-          Аккаунт
-          <ul>
-            <li>Змінити пароль</li>
-            <li>Выйти</li>
-          </ul>
-        </li>
-        <li><a href="http://127.0.0.1/openserver/phpmyadmin/index.php">PhpMyAdmin</a></li>
-        <li>Силки</li>
-      </ul>
-    </div>
     <main>
     <div class="buttons">
-    <button id="new_good">Додати</button>
-    <button id="responce">Видалити</button>
+    <button id="new_good">Добавити новий товар</button>
     <button id="responce">Відгуки</button>
     <button id="message">Повідомлення</button>
   </div>
@@ -90,8 +74,8 @@ if(isset($_POST)){
     </form>
   </div>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="/admin/js/main.js?<?=time()?>"></script>
-  <script type="text/javascript" src="/admin/js/mail.js?<?=time()?>"></script>
+  <script type="text/javascript" src="/admin/js/main.js?"></script>
+  <script type="text/javascript" src="/admin/js/mail.js"></script>
       </main>
   </body>
 </html>
