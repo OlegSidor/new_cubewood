@@ -1,20 +1,9 @@
 <?php
-//navigation
-$about = "#";
-$payment_delivery = "#";
-$contacts = "#";
-$response = "#";
-$lamps = "#";
-$decor = "#";
-$promotions = "#";
-//social
-$facebook = "https://www.facebook.com/cubwood/";
-$twitter = "#";
-$instagram = "https://www.instagram.com/cube_wood/";
-$email = "#";
-//catalogue
-$handing = "#";
-$desctop = "#";
-$sconce = "#";
-$floor = "#";
+$links = array();
+$mysql = new mysqli("localhost","root","","test");
+$mysql -> query("SET NAME 'utf8'");
+$alllinks = $mysql -> query("SELECT * FROM `links_ua`");
+while (($link = $alllinks ->fetch_assoc()) != false) {
+  $links[$link["name"]] = $link["url"];
+}
 ?>

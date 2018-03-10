@@ -1,0 +1,134 @@
+@font-face{
+  font-family:'roboto_light';
+  src: url('/fonts/roboto light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: roboto_light;
+}
+.main{
+  width: 75%;
+  margin-top: 20px;
+}
+.divider {
+    padding-top: 10px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    clear: both;
+}
+.slider{
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+.cont-nav{
+  margin-left: 200px;
+  margin-top: 20px;
+}
+.cont-nav *{
+  font-size: 13px;
+  font-family: roboto_light;
+  color: gray;
+  text-decoration: none;
+}
+.cont-nav a:hover{
+  text-decoration: underline;
+}
+.galery{
+  width: 59%;
+  float: left;
+  margin-bottom: 20px;
+}
+.galery img{
+  width: 100%;
+}
+.glr-nav img {
+    width: 22.9%;
+}
+.glr-nav {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.galery .slick-initialized .slick-slide{
+  height: auto;
+}
+.galery .slick-slide {
+    opacity: 1;
+}
+.glr-nav .slick-slide{
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.information{
+  float: left;
+  margin-left: 20px;
+  width: 39%;
+}
+.information h1{
+  color: gray;
+  font-weight: 100;
+}
+.sel-color{
+  margin-top: 10px;
+}
+.sel-color * {
+  display: inline-block;
+}
+/* COLOR SELECT */
+#green{
+  width: 25px;
+  height: 25px;
+  background: #97cf0f;
+}
+#blue{
+  width: 25px;
+  height: 25px;
+  background: #234b7a;
+}
+#orange{
+  width: 25px;
+  height: 25px;
+  background: orange;
+}
+#red{
+  width: 25px;
+  height: 25px;
+  background: red;
+}
+#gray{
+  width: 25px;
+  height: 25px;
+  background: gray;
+}
+.purchase{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.purchase input{
+  width: 40px;
+  height: 25px;
+  border-radius: 10px;
+  border: solid 1px #c6c4c4;
+  text-align: center;
+  font-size: 20px;
+  vertical-align: middle;
+}
+.purchase button{
+  border: none;
+  background: #ff4300;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+.type{
+  color: gray;
+  margin-top:20px;
+  margin-bottom: 50px;
+  font-style: italic;
+}

@@ -9,10 +9,11 @@
   <body>
     <form action="/admin/" method="post">
       <div class="center">
-      <span>Адмін панель</span>
+      <span class="title">Адмін панель</span>
       <input placeholder="Логін" type="text" name="login" value="">
       <input placeholder="Пароль" type="password" name="password" value="">
       <button type="submit" name="button">OK</button>
+      <a href="/">Вернутися на головну.</a>
       </div>
     </form>
   </body>

@@ -11,7 +11,7 @@
 .rside-menu{
   position: fixed;
   top: 100px;
-  right: -110px;
+  right: -130px;
   text-align: right;
   transition-duration: .5s;
 }
@@ -31,6 +31,8 @@
 .rside-menu ul li a {
   text-decoration: none;
   color: white;
+  padding: 10px;
+  padding-left: 10px;
 }
 .rside-menu ul li{
   list-style: none;
@@ -92,23 +94,42 @@ main{
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .functions form{
   display: none;
   position: relative;
   margin-bottom: 5px;
 }
+.main-info{
+  float: left;
+}
+.glr-imgs{
+  float: left;
+  margin-left: 15px;
+}
+.glr-imgs input{
+  height: 40px;
+  width: 265px;
+}
 .new_good *{
   display: block;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.new_good{
+.functions .new_good{
+  display: block;
   margin-left: 10px;
 }
 .new_good input[type="text"]{
   border: none;
-  height: 30px;
+  height: 40px;
+  width: 250px;
+  text-indent: 5px;
+}
+.new_good select{
+  border: none;
+  height: 40px;
   width: 250px;
   text-indent: 5px;
 }
@@ -121,11 +142,46 @@ main{
   background: #b15f32;
   color: white;
   padding: 10px;
-  width: 250px;
+  width: 875px;
 }
 .new_good textarea{
-  width: 250px;
+  width: 875px;
   text-indent: 5px;
+  resize: vertical;
+}
+.delete{
+  width: 100%;
+}
+.delete .list{
+    margin: 0 auto;
+  column-count: 3;
+  margin-top: 10px;
+  width: 90%;
+  margin-bottom: 10px;
+}
+.delete .list input{
+  vertical-align: middle;
+}
+.delete .list label{
+  margin-left: 5px;
+    vertical-align: middle;
+}
+.del_select {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.delete button{
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-family: roboto_light;
+  font-size: 15px;
+  border: none;
+  background: #b15f32;
+  color: white;
+  padding: 10px;
+  width: 70%;
+  margin-left: 135px;
 }
 .message{
   width: 90%;
@@ -160,4 +216,51 @@ main{
 }
 .emails.eng{
   display: none;
+}
+/* COLOR GALERY */
+#green::after{
+  content: "    ";
+  border: solid 5px green;
+  margin-right: 5px;
+  background: green;
+  margin-left: 125px;
+  vertical-align: middle;
+}
+#blue::after{
+  content: "    ";
+  border: solid 5px blue;
+  margin-right: 5px;
+  background: blue;
+  margin-left: 125px;
+  vertical-align: middle;
+}
+#orange::after{
+  content: "    ";
+  border: solid 5px orange;
+  margin-right: 5px;
+  background: orange;
+  margin-left: 125px;
+  vertical-align: middle;
+}
+#red::after{
+  content: "    ";
+  border: solid 5px red;
+  margin-right: 5px;
+  background: red;
+  margin-left: 125px;
+  vertical-align: middle;
+}
+#gray::after{
+  content: "    ";
+  border: solid 5px gray;
+  margin-right: 5px;
+  background: gray;
+  margin-left: 125px;
+  vertical-align: middle;
+}
+.spacing-warning{
+  text-align: center;
+  font-size: 12px;
+  float: left;
+  width: 40%;
 }

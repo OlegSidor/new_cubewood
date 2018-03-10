@@ -1,0 +1,68 @@
+@font-face{
+  font-family:'roboto_light';
+  src: url('/fonts/roboto light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+    background: #50a8a3;
+    font-family: roboto_light;
+}
+.from-wraper{
+  width: 450px;
+  margin: 10% auto;
+}
+form{
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 1px 1px 10px;
+}
+form input {
+  border: none;
+  border-bottom: solid 1px gray;
+  display: block;
+  margin: 10px auto;
+  width: 300px;
+  height: 30px;
+}
+form input[type="submit"]{
+  background: #b15f32;
+  color: white;
+  font-size: 15px;
+  border: none;
+}
+.info-wraper{
+  position: absolute;
+  top: 20px;
+  width: 100%;
+}
+.info{
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 25px;
+}
+.success{
+    background: #63cc7c;
+}
+.error{
+    background: #ed7878;
+}
+form a{
+  text-decoration: none;
+  font-size: 12px;
+  color: gray;
+  transition: .2s color;
+}
+form a:hover{
+  color: black;
+}

@@ -1,5 +1,5 @@
 <?php
-require("php/links.php")
+require("php/links.php");
 ?>
 <!DOCTYPE html>
 <html lang="uk-UA">
@@ -20,34 +20,32 @@ require("php/links.php")
     <header>
       <div class="logo">
       <a href="/">
-      <img src="/imgs/logo.png" alt="Cubewood">
+        <h1>CUBEWOOD</h1>
+        <h3>Inspired by Nature</h3>
       </a>
-      <span>Insplired by Nature</span>
-      <div class="menu">
-      </div>
     </div>
     <nav>
       <ul class="mine-nav">
-        <li><a class="nav" href="<?=$about ?>">про нас</a></li>
-        <li><a class="nav" href="<?=$payment_delivery?>">доставка та оплата</a></li>
-        <li><a class="nav" href="<?=$contacts?>">контакти</a></li>
+        <li><a class="nav" href="<?=$links["about"] ?>">про нас</a></li>
+        <li><a class="nav" href="<?=$links["payment_delivery"]?>">доставка та оплата</a></li>
+        <li><a class="nav" href="<?=$links["contacts"]?>">контакти</a></li>
         <div class="lsel">
         <li><a class="language sel" id="ua" href="/UA">UA</a></li>
         <li><a class="language" id="end" href="/ENG">ENG</a></li>
         <li><a class="cart" href="#"><img src="/imgs/cart.png" alt="cart"> кошик <span id="count">(0)</span></a></li>
+        <div class="category">
+          <div><a href="<?=$links["lamps"]?>">ЛАМПИ</a></div>
+          <div><a href="<?=$links["decor"]?>">ДЕКОР</a></div>
+          <div><a href="<?=$links["promotions"]?>">АКЦІЇ</a></div>
+        </div>
       </div>
       </ul>
       <ul class="social">
-        <li><a href="<?=$facebook?>"><img src="/imgs/social/facebook.png" alt="facebook"></a></li>
-        <li><a href="<?=$twitter?>"><img src="/imgs/social/twitter.png" alt="twitter"></a></li>
-        <li><a href="<?=$instagram?>"><img src="/imgs/social/inst.png" alt="instagram"></a></li>
+        <li><a href="<?=$links["facebook"]?>"><img src="/imgs/social/facebook.png" alt="facebook"></a></li>
+        <li><a href="<?=$links["twitter"]?>"><img src="/imgs/social/twitter.png" alt="twitter"></a></li>
+        <li><a href="<?=$links["instagram"]?>"><img src="/imgs/social/inst.png" alt="instagram"></a></li>
       </ul>
     </nav>
-    <div class="category">
-      <div><a href="<?=$lamps?>">ЛАМПИ</a></div>
-      <div><a href="<?=$decor?>">ДЕКОР</a></div>
-      <div><a href="<?=$promotions?>">АКЦІЇ</a></div>
-    </div>
     <div class="main">
       <img src="/imgs/headlamp.png">
       <div class="bcataloge">
@@ -68,25 +66,25 @@ require("php/links.php")
       </div>
       <div class="catalogue">
         <div class="handing">
-          <a href="<?=$handing?>">
+          <a href="<?=$links["handing"]?>">
             <img src="/imgs/catalogue/handing.png" alt="">
             <div class="name" id="handing_"><figcaption>ПІДВІСНІ
                                                 світильники</figcaption></div>
           </a>
         </div>
          <div class="desktop">
-          <a href="<?=$desctop?>"><img src="/imgs/catalogue/desktop.png" alt="">
+          <a href="<?=$links["desktop"]?>"><img src="/imgs/catalogue/desktop.png" alt="">
             <div class="name" id="desktop_"><figcaption>НАСТІЛЬНІ
                                                 світильники</figcaption></div>
           </a>
         </div>
         <div class="sconce">
-          <a href="<?=$sconce?>"><img src="/imgs/catalogue/sconce.png" alt="">
+          <a href="<?=$links["sconce_"]?>"><img src="/imgs/catalogue/sconce.png" alt="">
             <div class="name" id="sconce_"><figcaption>БРА</figcaption></div>
           </a>
         </div>
         <div class="floor">
-          <a href="<?=$floor?>"><img src="/imgs/catalogue/floor.png" alt="">
+          <a href="<?=$links["floor"]?>"><img src="/imgs/catalogue/floor.png" alt="">
             <div class="name" id="floor_"><figcaption>ТОРШЕРИ</figcaption></div>
           </a>
         </div>
@@ -173,24 +171,24 @@ require("php/links.php")
         </div>
         <div class="fcenter">
     <div class="categoryf">
-      <div><a href="<?=$lamps?>">ЛАМПИ</a></div>
-      <div><a href="<?=$decor?>">ДЕКОР</a></div>
-      <div><a href="<?=$promotions?>">АКЦІЇ</a></div>
+      <div><a href="<?=$links["lamps"]?>">ЛАМПИ</a></div>
+      <div><a href="<?=$links["decor"]?>">ДЕКОР</a></div>
+      <div><a href="<?=$links["promotions"]?>">АКЦІЇ</a></div>
     </div>
   </div>
     <div class="fright">
       <ul class="foot-nav">
-        <li><a class="nav" href="<?=$about?>">про нас</a></li>
-        <li><a class="nav" href="<?=$payment_delivery?>">доставка та оплата</a></li>
-        <li><a class="nav" href="<?=$contacts?>">контакти</a></li>
-        <li><a class="nav" href="<?=$response?>">Відгук</a></li>
+        <li><a class="nav" href="<?=$links["about"] ?>">про нас</a></li>
+        <li><a class="nav" href="<?=$links["payment_delivery"]?>">доставка та оплата</a></li>
+        <li><a class="nav" href="<?=$links["contacts"]?>">контакти</a></li>
+        <li><a class="nav" href="<?=$links["response"]?>">Відгук</a></li>
       </ul>
     </div>
     <ul class="social">
-      <li><a href="<?=$facebook?>"><img src="/imgs/social/facebook.png" alt="facebook"></a></li>
-      <li><a href="<?=$twitter?>"><img src="/imgs/social/twitter.png" alt="twitter"></a></li>
-      <li><a href="<?=$instagram?>"><img src="/imgs/social/inst.png" alt="instagram"></a></li>
-      <li><a href="<?=$email?>"><img src="/imgs/social/mail.png" alt="mail"></a></li>
+      <li><a href="<?=$links["facebook"]?>"><img src="/imgs/social/facebook.png" alt="facebook"></a></li>
+      <li><a href="<?=$links["twitter"]?>"><img src="/imgs/social/twitter.png" alt="twitter"></a></li>
+      <li><a href="<?=$links["instagram"]?>"><img src="/imgs/social/inst.png" alt="instagram"></a></li>
+      <li><a href="<?=$links["email"]?>"><img src="/imgs/social/mail.png" alt="mail"></a></li>
     </ul>
     </main>
     </div>
@@ -200,8 +198,9 @@ require("php/links.php")
       sessionStorage["language"] = "ua";
       </script>
       <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="/js/jquery-3.2.1.js"></script>
       <script type="text/javascript" src="/js/main.js?<?=time()?>"></script>
+      <script type="text/javascript" src="/js/mailing.js?<?=time()?>"></script>
       <script type="text/javascript" src="/slick/slick.min.js"></script>
   </body>
 </html>

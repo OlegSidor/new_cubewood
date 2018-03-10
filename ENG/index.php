@@ -18,35 +18,33 @@ require("php/links.php")
     </div>
     <header>
       <div class="logo">
-      <a href="/">
-      <img src="/imgs/logo.png" alt="Cubewood">
+      <a href="/ENG/">
+        <h1>CUBEWOOD</h1>
+        <h3>Inspired by Nature</h3>
       </a>
-      <span>Insplired by Nature</span>
-      <div class="menu">
-      </div>
     </div>
     <nav>
       <ul class="mine-nav">
-        <li><a class="nav" href="<?=$about?>">about as</a></li>
-        <li><a class="nav" href="<?=$payment_delivery?>">payment and delivery</a></li>
-        <li><a class="nav" href="<?=$contacts?>">contacts</a></li>
+        <li><a class="nav" href="<?=$links["about"]?>">about as</a></li>
+        <li><a class="nav" href="<?=$links["payment_delivery"]?>">payment and delivery</a></li>
+        <li><a class="nav" href="<?=$links["contacts"]?>">contacts</a></li>
         <div class="lsel">
           <li><a class="language" id="ua" href="/UA">UA</a></li>
           <li><a class="language sel" id="end" href="/ENG">ENG</a></li>
         <li><a class="cart" href="#"><img src="/imgs/cart.png" alt="cart"> cart <span id="count">(0)</span></a></li>
       </div>
+      <div class="category">
+        <div><a href="<?=$links["lamps"]?>">LAMGS</a></div>
+        <div><a href="<?=$links["decor"]?>">DECOR</a></div>
+        <div><a href="<?=$links["promotions"]?>">PROMOTIONS</a></div>
+      </div>
       </ul>
       <ul class="social">
-        <li><a href="<?=$facebook?>"><img src="/imgs/social/facebook.png" alt="facebook"></a></li>
-        <li><a href="<?=$twitter?>"><img src="/imgs/social/twitter.png" alt="twitter"></a></li>
-        <li><a href="<?=$instagram?>"><img src="/imgs/social/inst.png" alt="instagram"></a></li>
+        <li><a href="<?=$links["facebook"]?>"><img src="/imgs/social/facebook.png" alt="facebook"></a></li>
+        <li><a href="<?=$links["twitter"]?>"><img src="/imgs/social/twitter.png" alt="twitter"></a></li>
+        <li><a href="<?=$links["instagram"]?>"><img src="/imgs/social/inst.png" alt="instagram"></a></li>
       </ul>
     </nav>
-    <div class="category">
-      <div><a href="<?=$lamps?>">LAMPS</a></div>
-      <div><a href="<?=$decor?>">DECOR</a></div>
-      <div><a href="<?=$promotions?>">PROMOTIONS</a></div>
-    </div>
     <div class="main">
       <img src="/imgs/headlamp.png">
       <div class="bcataloge">
@@ -67,25 +65,25 @@ require("php/links.php")
       </div>
       <div class="catalogue">
         <div class="handing">
-          <a href="<?=$handing?>">
+          <a href="<?=$links["handing"]?>">
             <img src="/imgs/catalogue/handing.png" alt="">
             <div class="name" id="handing_"><figcaption>HANDING
                                                 lamps</figcaption></div>
           </a>
         </div>
          <div class="desktop">
-          <a href="<?=$desctop?>"><img src="/imgs/catalogue/desktop.png" alt="">
+          <a href="<?=$links["desctop"]?>"><img src="/imgs/catalogue/desktop.png" alt="">
             <div class="name" id="desktop_"><figcaption>DESKTOP
                                                 lamps</figcaption></div>
           </a>
         </div>
         <div class="sconce">
-          <a href="<?=$sconce?>"><img src="/imgs/catalogue/sconce.png" alt="">
+          <a href="<?=$links["sconce"]?>"><img src="/imgs/catalogue/sconce.png" alt="">
             <div class="name" id="sconce_"><figcaption>SCONCE</figcaption></div>
           </a>
         </div>
         <div class="floor">
-          <a href="<?=$floor?>"><img src="/imgs/catalogue/floor.png" alt="">
+          <a href="<?=$links["floor"]?>"><img src="/imgs/catalogue/floor.png" alt="">
             <div class="name" id="floor_"><figcaption>FLOOR
                                                     lamps</figcaption></div>
           </a>
@@ -103,7 +101,7 @@ require("php/links.php")
         for ($i=0; $i < 4; $i++) {
           if(($item = $items -> fetch_assoc()) != false){
             echo "<div class='item'>
-                      <a href='$item[url]'>
+                      <a href='$item[url_eng]'>
                         <img src='$item[src]' alt='$item[name]'>
                         <figcaption>$item[name]<span>$item[cost_usd] $</span></figcaption>
                       </a>
@@ -173,24 +171,24 @@ require("php/links.php")
         </div>
         <div class="fcenter">
     <div class="categoryf">
-      <div><a href="<?=$lamps?>">Lamps</a></div>
-      <div><a href="<?=$decor?>">Decor</a></div>
-      <div><a href="<?=$promotions?>">Promotions</a></div>
+      <div><a href="<?=$links["lamps"]?>">Lamps</a></div>
+      <div><a href="<?=$links["decor"]?>">Decor</a></div>
+      <div><a href="<?=$links["promotions"]?>">Promotions</a></div>
     </div>
   </div>
     <div class="fright">
       <ul class="foot-nav">
-        <li><a class="nav" href="<?=$about?>">about as</a></li>
-        <li><a class="nav" href="<?=$payment_delivery?>">payment and delivery</a></li>
-        <li><a class="nav" href="<?=$contacts?>">contacts</a></li>
-        <li><a class="nav" href="<?=$response?>">responce</a></li>
+        <li><a class="nav" href="<?=$links["about"]?>">about as</a></li>
+        <li><a class="nav" href="<?=$links["payment_delivery"]?>">payment and delivery</a></li>
+        <li><a class="nav" href="<?=$links["contacts"]?>">contacts</a></li>
+        <li><a class="nav" href="<?=$links["response"]?>">responce</a></li>
       </ul>
     </div>
     <ul class="social">
-      <li><a href="#"><img src="/imgs/social/facebook.png" alt="facebook"></a></li>
-      <li><a href="#"><img src="/imgs/social/twitter.png" alt="twitter"></a></li>
-      <li><a href="#"><img src="/imgs/social/inst.png" alt="instagram"></a></li>
-      <li><a href="#"><img src="/imgs/social/mail.png" alt="mail"></a></li>
+      <li><a href="<?=$links["facebook"]?>"><img src="/imgs/social/facebook.png" alt="facebook"></a></li>
+      <li><a href="<?=$links["twitter"]?>"><img src="/imgs/social/twitter.png" alt="twitter"></a></li>
+      <li><a href="<?=$links["instagram"]?>"><img src="/imgs/social/inst.png" alt="instagram"></a></li>
+      <li><a href="<?=$links["email"]?>"><img src="/imgs/social/mail.png" alt="mail"></a></li>
     </ul>
     </main>
     </div>
@@ -199,7 +197,7 @@ require("php/links.php")
       <script type="text/javascript">
       sessionStorage["language"] = "eng";
       </script>
-      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="/js/jquery-3.2.1.js"></script>
       <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
       <script type="text/javascript" src="/js/main.js?<?=time()?>"></script>
       <script type="text/javascript" src="/slick/slick.min.js"></script>
